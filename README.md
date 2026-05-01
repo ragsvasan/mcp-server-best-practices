@@ -5,6 +5,19 @@
 
 ---
 
+## Claude Code Skill
+
+A Claude Code skill is included that enforces these best practices inline while you build — flagging multi-roundtrip write paths, missing idempotency keys, wrong error classes, and annotation gaps before they reach a panel review.
+
+**Install:**
+1. Download [`skills/mcp-tool-design.skill`](skills/mcp-tool-design.skill)
+2. Double-click the `.skill` file — Claude will install it automatically
+3. It activates whenever you're building, reviewing, or debugging an MCP server
+
+Source: [`skills/mcp-tool-design/SKILL.md`](skills/mcp-tool-design/SKILL.md)
+
+---
+
 ## 1. Traffic Model — Read This First
 
 MCP servers are not web apps. Every capacity estimate that assumes web-app concurrency will be wrong by 10–100×.
